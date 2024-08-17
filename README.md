@@ -16,34 +16,34 @@ The project is organized into several Jupyter notebooks, each focusing on a spec
 ### Datasets
 
 - **MSD**: Million Song Dataset.
-- **Adressa**: News Recommendation Dataset.
-- **Globo**: Brazilian News Dataset.
+- **AdressaOneWeek**
+- **Globo**
 
 ### Scenarios (RecPack)
 
 - **Strong Generalization**: Evaluates model performance on new, unseen users.
-- **Timed Last**: Evaluates model performance considering the last item of user interactions.
-- **Last Item Prediction**: Focuses on predicting the last item in a user's interaction history.
+- **Timed Last Item Prediction**: Evaluates model performance considering the last item of user interactions.
 
 ## File Descriptions
 
 Each notebook is named according to the format `<Model> <Dataset> <Scenario>.ipynb`, which reflects the model, dataset, and scenario being evaluated. Here is a brief description of each file:
 
-- `LightGCN Adressa Strong Generalization.ipynb`: Implementation of the LightGCN model on the Adressa dataset, evaluated under the Strong Generalization scenario.
-- `LightGCN Globo Timed Last Item Prediction.ipynb`: LightGCN model on the Globo dataset, focusing on Timed Last Item Prediction.
-- `NGCF MSD Strong.ipynb`: Implementation of NGCF on the Million Song Dataset, evaluated under Strong Generalization.
-- `PinSAGE Globo.ipynb`: PinSAGE model applied to the Globo dataset without a specified scenario.
-- `EASE & Item KNN MSD Strong.ipynb`: A combined model of EASE and Item KNN applied to the Million Song Dataset under the Strong Generalization scenario.
-- `...` (Continue with other files similarly)
+- `EASE & Item KNN Adressa Strong Generalization & Timed Last.ipynb`: Implementation of EASE and Item KNN models on the AdressaOneWeek dataset, evaluated under both Strong Generalization and Timed Last scenarios.
+- `EASE & Item KNN Globo Strong Generalization & Timed Last.ipynb`: EASE and Item KNN models on the Globo dataset, evaluated under both Strong Generalization and Timed Last scenarios.
+- `EASE & Item KNN MSD Strong.ipynb`: EASE and Item KNN models applied to the Million Song Dataset, focusing on Strong Generalization.
+- `LightGCN Adressa Strong Generalization.ipynb`: LightGCN model on the AdressaOneWeek dataset, evaluated under the Strong Generalization scenario.
+- `LightGCN Adressa Timed Last.ipynb`: LightGCN model on the AdressaOneWeek dataset, focusing on the Timed Last Item Prediction scenario.
+- `LightGCN Globo Strong Generalization.ipynb`: LightGCN model on the Globo dataset, evaluated under the Strong Generalization scenario.
+- `LightGCN Globo Timed Last Item Prediction.ipynb`: LightGCN model on the Globo dataset, focusing on the Timed Last Item Prediction scenario.
+- `LightGCN MSD Strong.ipynb`: LightGCN model on the Million Song Dataset, evaluated under the Strong Generalization scenario.
+- `NGCF Adressa Strong.ipynb`: NGCF model applied to the AdressaOneWeek dataset, focusing on the Strong Generalization scenario.
+- `NGCF Adressa Timed Last.ipynb`: NGCF model on the AdressaOneWeek dataset, evaluated under the Timed Last Item Prediction scenario.
+- `NGCF Globo Strong.ipynb`: NGCF model on the Globo dataset, evaluated under the Strong Generalization scenario.
+- `NGCF Globo Timed Last.ipynb`: NGCF model on the Globo dataset, focusing on the Timed Last Item Prediction scenario.
+- `NGCF MSD.ipynb`: NGCF model on the Million Song Dataset, evaluated under the Strong Generalization scenario.
+- `PinSAGE Adressa Strong.ipynb`: PinSAGE model on the AdressaOneWeek dataset, focusing on Strong Generalization.
+- `PinSAGE Adressa Timed Last.ipynb`: PinSAGE model on the AdressaOneWeek dataset, evaluated under the Timed Last Item Prediction scenario.
+- `PinSAGE Globo Strong.ipynb`: PinSAGE model on the Globo dataset, evaluated under the Strong Generalization scenario.
+- `PinSAGE Globo Timed Last.ipynb`: PinSAGE model on the Globo dataset, focusing on the Timed Last Item Prediction scenario.
+- `PinSAGE MSD.ipynb`: PinSAGE model on the Million Song Dataset, evaluated under the Strong Generalization scenario.
 
-## Getting Started
-
-To run the notebooks, you will need to have the following dependencies installed:
-
-- Python 3.x
-- Jupyter Notebook
-- RecPack
-- PyTorch (for GNN models)
-- PyTorch Sparse
-- Pandas
-- NumPy
